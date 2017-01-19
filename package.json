@@ -1,6 +1,6 @@
 {
     "name": "mavi-grid",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "description": "Simple SASS customizable grid",
     "author": "Marc López Ávila",
     "license": "ISC",
@@ -11,5 +11,9 @@
         "simple",
         "responsive",
         "customizable"
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/marclopez10/mavi-grid.git"
+    }
 }
