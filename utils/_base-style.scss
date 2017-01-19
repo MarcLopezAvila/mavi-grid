@@ -1,0 +1,51 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: #{$maxWidth}px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: #{$gutter/2}px;
+    padding-right: #{$gutter/2}px;
+
+    @include smallPadding();
+}
+
+.container-fluid {
+    padding-left: #{$gutter/2}px;
+    padding-right: #{$gutter/2}px;
+    position:relative;
+
+    @include smallPadding();
+}
+
+//Clear columns
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+//The row
+.row {
+    margin-left:  -#{$gutter/2}px;
+    margin-right: -#{$gutter/2}px;
+
+    @if ($gutter != $gutterSmall) {
+        @media #{$small-bp} {
+            margin-left:  -#{$gutterSmall/2}px;
+            margin-right: -#{$gutterSmall/2}px;
+        }
+    }
+}
+

@@ -1,0 +1,15 @@
+//Small
+$small-bp: "(max-width : " + $small + "px)";
+
+//Medium
+$medium-bp     : "(min-width : " + $medium + "px)";
+$medium-only-bp: "(min-width : " + $medium + "px) and (max-width : " + ($large - 1) + "px)";
+$medium-down-bp: "(max-width : " + ($large - 1) + "px)";
+
+//Large
+$large-bp     : "(min-width : " + $large + "px)";
+$large-only-bp: "(min-width : " + $large + "px) and (max-width : " + $xlarge + "px)";
+$large-down-bp: "(max-width : " + $xlarge + "px)";
+
+//X-Large
+$xlarge-bp : "(min-width : " + $xlarge + "px)";

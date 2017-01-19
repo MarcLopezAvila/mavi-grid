@@ -1,0 +1,97 @@
+/*
+Project: Mavi Grid
+By: Marc López Ávila
+Date: 2016
+Version: 1.0.0
+*/
+
+@import 'config/config';
+@import 'utils/utils';
+
+
+//Grid Small
+@media #{$small-bp} {
+    @for $i from 1 through $colNumber {
+        .small-#{$i} {
+            @include colWidth($i);
+        }
+
+        .small-offset-#{$i} {
+            @include colMargin($i, 'left');
+        }
+
+        .small-offset-right-#{$i} {
+            @include colMargin($i, 'right');
+        }
+    }
+}
+
+//Grid Medium
+@media #{$medium-bp} {
+    @for $i from 1 through $colNumber {
+        .medium-#{$i} {
+            @include colWidth($i);
+        }
+
+        .medium-offset-#{$i} {
+            @include colMargin($i, 'left');
+        }
+
+        .medium-offset-right-#{$i} {
+            @include colMargin($i, 'right');
+        }
+    }
+}
+
+//Grid Large
+@media #{$large-bp} {
+    @for $i from 1 through $colNumber {
+        .large-#{$i} {
+            @include colWidth($i);
+        }
+
+        .large-offset-#{$i} {
+            @include colMargin($i, 'left');
+        }
+
+        .large-offset-right-#{$i} {
+            @include colMargin($i, 'right');
+        }
+    }
+}
+
+//Grid X-Large
+@media #{$xlarge-bp} {
+    @for $i from 1 through $colNumber {
+        .x-large-#{$i} {
+            @include colWidth($i);
+        }
+
+        .x-large-offset-#{$i} {
+            @include colMargin($i, 'left');
+        }
+
+        .x-large-offset-right-#{$i} {
+            @include colMargin($i, 'right');
+        }
+    }
+}
+
+//Grid Cols style
+$breakPointsLabels: small, medium, large, x-large;
+$cols: null;
+
+@for $i from 1 through $colNumber {
+    @each $label in $breakPointsLabels {
+        @if ($cols) {
+            $cols: $cols + ', '+ '.' + $label + '-' + $i;
+        } @else {
+            $cols: '.' + $label + '-' + $i;
+        }
+    }
+}
+
+//Col style
+#{$cols} {
+    @include colStyle;
+}

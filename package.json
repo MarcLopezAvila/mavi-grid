@@ -1,0 +1,15 @@
+{
+    "name": "mavi-grid",
+    "version": "1.0.4",
+    "description": "Simple SASS customizable grid",
+    "author": "Marc López Ávila",
+    "license": "ISC",
+    "keywords": [
+        "css",
+        "sass",
+        "grid",
+        "simple",
+        "responsive",
+        "customizable"
+    ]
+}

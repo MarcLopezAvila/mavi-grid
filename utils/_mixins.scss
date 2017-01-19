@@ -1,0 +1,26 @@
+@mixin smallPadding() {
+    @if ($gutter !=$gutterSmall) {
+        @media #{$small-bp} {
+            padding-left: #{$gutterSmall/2}px;
+            padding-right: #{$gutterSmall/2}px;
+        }
+    }
+}
+
+@mixin colWidth($i) {
+    width: ((($i * $maxWidth) / $colNumber) / $maxWidth) * 100%;;
+}
+
+@mixin colMargin($i, $direction) {
+    margin-#{$direction}: ((($i * $maxWidth) / $colNumber) / $maxWidth) * 100%;;
+}
+
+@mixin colStyle() {
+    padding-left: #{$gutter/2}px;
+    padding-right: #{$gutter/2}px;
+    float: left;
+    position:relative;
+    min-height: 1px;
+
+    @include smallPadding();
+}
