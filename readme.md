@@ -13,7 +13,11 @@ Compile the grid.scss file and export it in a css file like "grid.css" then incl
    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
-    <div class="small-12 medium-4 large-6 x-large-6"></div>
+    <div class="container">
+        <div class="row">
+            <div class="small-12 medium-4 large-6 x-large-6"></div>
+        </div>
+    </div>
 </body>
 </html>
 ```
