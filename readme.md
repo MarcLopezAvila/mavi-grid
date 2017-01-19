@@ -19,6 +19,18 @@ Compile the grid.scss file and export it in a css file like "grid.css" then incl
                 <p>Hello world</p>
             </div>
         </div>
+        
+        <div class="row">
+            <div class="container-fluid">
+                <p>Container fluid (column without width and float)</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="medium-offset-left-2 medium-5">
+                <p>A 5 wide column moved two columns from left to right</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
@@ -30,7 +42,7 @@ Compile the grid.scss file and export it in a css file like "grid.css" then incl
 
 * Hidden Breakpoint Classes : hidden-{breakpoint}
 * Pull Classes (floats): pull-right / pull-left
-* Offset Breakpoint Classes: small-offset-right-2 / small-offset-left-2
+* Offset Breakpoint Classes: medium-offset-right-2 / medium-offset-left-2
 
 ### Prerequisites
 
