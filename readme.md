@@ -35,6 +35,22 @@ Compile the grid.scss file and export it in a css file like "grid.css" then incl
 </body>
 </html>
 ```
+###You can modify all vars
+```html
+//Global Variables
+$colNumber   : 12;
+$gutter      : 30;
+$gutterSmall : 10;
+$maxWidth    : 1200;
+
+//Breakpoints
+$breakPoints: 4;
+$small :  767  !default; // 0, 767
+$medium:  768  !default; // 768, 991
+$large :  992  !default; // 992, 1200
+$xlarge:  1200 !default; // 1201 , X
+
+```
 
 
 ### Utils
