@@ -2,7 +2,7 @@
 Project: Mavi Grid
 By: Marc López Ávila
 Date: 2016
-Version: 1.0.10
+Version: 1.0.11
 */
 
 @import 'config/config';
@@ -16,7 +16,7 @@ Version: 1.0.10
             @include colWidth($i);
         }
 
-        .small-offset-#{$i} {
+        .small-offset-left-#{$i} {
             @include colMargin($i, 'left');
         }
 
@@ -33,7 +33,7 @@ Version: 1.0.10
             @include colWidth($i);
         }
 
-        .medium-offset-#{$i} {
+        .medium-offset-left-#{$i} {
             @include colMargin($i, 'left');
         }
 
@@ -50,7 +50,7 @@ Version: 1.0.10
             @include colWidth($i);
         }
 
-        .large-offset-#{$i} {
+        .large-offset-left-#{$i} {
             @include colMargin($i, 'left');
         }
 
@@ -67,7 +67,7 @@ Version: 1.0.10
             @include colWidth($i);
         }
 
-        .x-large-offset-#{$i} {
+        .x-large-offset-left-#{$i} {
             @include colMargin($i, 'left');
         }
 
