@@ -1,8 +1,8 @@
 //Global Variables
-$colNumber   : 12;
-$gutter      : 30;
-$gutterSmall : 10;
-$maxWidth    : 1200;
+$colNumber   : 12 !default;
+$gutter      : 30 !default;
+$gutterSmall : 30 !default;
+$maxWidth    : 1200 !default;
 
 //Breakpoints
 $breakPoints: 4;

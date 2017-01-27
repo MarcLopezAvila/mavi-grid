@@ -36,12 +36,14 @@ Compile the grid.scss file and export it in a css file like "grid.css" then incl
 </html>
 ```
 ###You can modify all vars
+
+These are the default values:
 ```html
 //Global Variables
-$colNumber   : 12;
-$gutter      : 30;
-$gutterSmall : 10;
-$maxWidth    : 1200;
+$colNumber   : 12 !default;
+$gutter      : 30 !default;
+$gutterSmall : 30 !default;
+$maxWidth    : 1200 !default;
 
 //Breakpoints
 $breakPoints: 4;
@@ -49,6 +51,15 @@ $small :  767  !default; // 0, 767
 $medium:  768  !default; // 768, 991
 $large :  992  !default; // 992, 1200
 $xlarge:  1200 !default; // 1201 , X
+
+```
+
+You can put your own configuration if you copy these variables and put them above your import of the "grid.scss" file. In the next example we are saying to the grid to have a gutter of 20 when you are in the small breakpoint:
+
+```html
+
+$gutterSmall : 20;
+@import "node_modules/mavi-grid/grid";
 
 ```
 
