@@ -8,17 +8,17 @@
 }
 
 @mixin colWidth($i) {
-    width: ((($i * $maxWidth) / $colNumber) / $maxWidth) * 100%;;
+    width: ((($i * $maxWidth) / $colNumber) / $maxWidth) * 100%;
+    float: left;
 }
 
 @mixin colMargin($i, $direction) {
-    margin-#{$direction}: ((($i * $maxWidth) / $colNumber) / $maxWidth) * 100%;;
+    margin-#{$direction}: ((($i * $maxWidth) / $colNumber) / $maxWidth) * 100%;
 }
 
 @mixin colStyle() {
     padding-left: #{$gutter/2}px;
     padding-right: #{$gutter/2}px;
-    float: left;
     position:relative;
     min-height: 1px;
 
