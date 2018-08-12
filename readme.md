@@ -35,7 +35,7 @@ Compile the grid.scss file and export it in a css file like "grid.css" then incl
 </body>
 </html>
 ```
-###You can modify all vars
+### You can modify all vars
 
 These are the default values:
 ```html
